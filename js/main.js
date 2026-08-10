@@ -2,7 +2,26 @@
  document.addEventListener("DOMContentLoaded", () => {
 
   // 2) نسجل البلوجن
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  // smooth anchor scrolling via GSAP (avoids CSS scroll-behavior:smooth,
+  // which fights with ScrollTrigger's own scroll tracking and causes jank)
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (!targetId || targetId.length <= 1) return;
+      const targetEl = document.querySelector(targetId);
+      if (!targetEl) return;
+      e.preventDefault();
+      const navEl = document.getElementById("main-nav");
+      const offset = navEl ? navEl.offsetHeight : 0;
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: targetEl, offsetY: offset },
+        ease: "power2.inOut",
+      });
+    });
+  });
 
   // 3) نجيب كل progress-bar
   const bars = document.querySelectorAll(".progress-bar");
