@@ -148,6 +148,12 @@ nav .nav-link::after {
   min-height: 520px;
   background-position: center;
 }
+@media (max-width: 767.98px) {
+  #Home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/bg-mobile.webp);
+  }
+}
 /* fixed backgrounds are janky / unsupported on mobile browsers */
 @media (min-width: 992px) and (hover: hover) {
   #Home {
