@@ -139,7 +139,7 @@ gsap.utils.toArray(".animate-img").forEach(img => {
       navBar.removeClass('bg-body-tertiary')
 
 navBar.css({
-                "background-color": "rgba(255, 255, 255, 0.6)", // لون خلفية شبه شفاف
+                "background-color": "rgba(255, 255, 255, 0.92)", // لون خلفية شبه شفاف
                 "transition": "background-color 0.5s ease"
             });
 
