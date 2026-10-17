@@ -141,11 +141,18 @@ nav .nav-link::after {
 /* start home */
 #Home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/bg.jpeg);
+    url(../images/bg.webp);
   background-size: cover;
   height: 100vh;
-  background-attachment: fixed;
+  height: 100svh;
+  min-height: 520px;
   background-position: center;
+}
+/* fixed backgrounds are janky / unsupported on mobile browsers */
+@media (min-width: 992px) and (hover: hover) {
+  #Home {
+    background-attachment: fixed;
+  }
 }
 #Home h4 {
   font-size: 30px;
@@ -354,9 +361,12 @@ background-color: #F3F3F3;
 }
 
 .title h2 {
-     font-size: 3rem;
-    color: #ccc;
-    letter-spacing: 5px;
+  font-size: clamp(2rem, 9vw, 3rem);
+  color: #ccc;
+  letter-spacing: clamp(2px, 1vw, 5px);
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
@@ -476,11 +486,76 @@ bottom:10px
 bottom:-50px
 }
 
-#Certificates .ineer-img img{
-  aspect-ratio: 4 / 3;
+/* uniform project & certificate thumbnails */
+.ineer-img {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: #f4f4f4;
+}
+.ineer-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top;
-  width: 100%;
+  transition: transform 0.6s ease;
+}
+.ineer-img:hover img {
+  transform: scale(1.05);
+}
+#Certificates .ineer-img img{
+  aspect-ratio: 4 / 3;
+}
+.inner > p {
+  min-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* touch screens have no hover: keep the links reachable as a bottom bar */
+@media (hover: none) {
+  .ineer-img .layer {
+    opacity: 1;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+  }
+  .ineer-img .layer p {
+    display: none;
+  }
+  .ineer-img .layer .layer-icon {
+    position: static;
+  }
+  .ineer-img .layer > div > span {
+    font-size: 0.85rem;
+  }
+  .ineer-img .layer a {
+    background-color: #fff;
+    color: #000;
+  }
+  #Team .card-layer {
+    opacity: 1;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  }
+  #Team .card:hover .card-layer {
+    transform: none;
+  }
+}
+
+/* project filter pills */
+.project-filters {
+  gap: 0.25rem 0.75rem;
 }
 
 /* end portfolio */
@@ -557,6 +632,18 @@ background-color: #F3F3F3;
 #Team .card-body{
 background-color: #5B5B5B;
 
+}
+#Team .card-body h3 {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+}
+#Team .card-body h4 {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 400;
+  opacity: 0.85;
+}
+#Team .card-img img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 .card-img, .card-img-top{
     border-top-left-radius: 0px !important;
@@ -662,17 +749,59 @@ footer{
     color: #748182;
     background-color: #1C1C1C;
 }
+@media screen and (max-width: 991.98px) {
+  /* mobile dropdown menu needs a solid background over the hero */
+  #main-nav .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.97);
+    margin: 0 -12px;
+    padding: 0 12px 8px;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-text{
     margin-top: 50px;
   }
+  #About .about-img img {
+    padding: 0 0 0 15px;
+  }
+  #About .about-img::after {
+    bottom: -15px;
+  }
+  #Home h4 {
+    font-size: 24px;
+  }
+  #Home .title h2::after {
+    font-size: 30px;
+  }
+  nav .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .main-title {
+    margin-top: 2rem;
+  }
+  #Clients .updated1 {
+    margin-top: 1.5rem;
+  }
   #Team .card{
     margin-bottom: 10px;
   }
-  .updated1{
-    margin-top: 3.2rem;
+}
+@media screen and (max-width: 575.98px) {
+  #About .btn {
+    width: 100%;
+    margin-bottom: 0.75rem;
   }
-
+}
+@media (prefers-reduced-motion: reduce) {
+  #Home .scroll,
+  #Home .title h2::after,
+  .setting .fa-spin {
+    animation: none !important;
+  }
+  .ineer-img img,
+  #Team .card-img img {
+    transition: none !important;
+  }
 }
 
 /* start Digital Twin chat widget */

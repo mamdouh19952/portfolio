@@ -133,7 +133,6 @@ gsap.utils.toArray(".animate-img").forEach(img => {
         const navHeight = navBar.outerHeight(true);
         const secTop = $("#About").offset().top - navHeight; 
         const scrollTop = $(window).scrollTop();
-        console.log(scrollTop, secTop);
     
         // إذا تجاوز التمرير قسم About
         if (scrollTop >= secTop) {
@@ -154,7 +153,21 @@ navBar.css({
         }  
     });
 
+// close the mobile navbar after picking a link
+$("#navbarSupportedContent .nav-link").on("click", function () {
+  const menu = document.getElementById("navbarSupportedContent");
+  if (menu.classList.contains("show")) {
+    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+  }
+});
+
 // side setting box
+$("#setting").on("keydown", function (e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    $(this).trigger("click");
+  }
+});
 $("#setting").on("click", function(){
     $(".open").css("left","0px");
             $(".links-side").animate({top:0},500)
@@ -169,6 +182,7 @@ $(".open li").on("click", function(){
     $(".open").css("left","-200px");
 });
 
+let closeTimer;
 $(".open").on("mouseleave", function() {
   closeTimer = setTimeout(() => {
     $(".open").css("left", "-200px");
@@ -184,7 +198,6 @@ $("textarea").on("keyup", function() {
 
   // myLength = this.value.length    ;
   let myLength = $(this).val().length;
-  console.log(myLength);
   $("p.text-area").text(` ${50 - myLength} characters remaining`);
   if (myLength > 50) {
     $("p.text-area").css("color", "red");
