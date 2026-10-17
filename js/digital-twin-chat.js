@@ -57,7 +57,14 @@
       hideTyping();
 
       if (!res.ok || !data.reply) {
-        addMessage("error", data.error || "Something went wrong. Please try again in a moment.");
+        // keep provider details out of the UI; they're still visible in the console
+        console.error("Digital Twin API error:", res.status, data.error || data);
+        addMessage(
+          "error",
+          res.status === 429
+            ? "I'm getting a lot of questions right now — please try again in a minute."
+            : "Sorry, I can't answer right now. Please try again later or reach me at mamdouh87741@gmail.com."
+        );
         return;
       }
 
