@@ -12,6 +12,31 @@
     });
   });
 
+  // Mobile menu
+  var header = document.querySelector(".site-header");
+  var menuBtn = document.getElementById("menuBtn");
+  var nav = document.getElementById("siteNav");
+  function setMenu(open) {
+    header.classList.toggle("menu-open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", function () {
+      setMenu(!header.classList.contains("menu-open"));
+    });
+    nav.addEventListener("click", function (e) {
+      if (e.target.closest("a")) setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { setMenu(false); menuBtn.focus(); }
+    });
+    document.addEventListener("click", function (e) {
+      if (!header.contains(e.target)) setMenu(false);
+    });
+    window.matchMedia("(min-width: 721px)").addEventListener("change", function () { setMenu(false); });
+  }
+
   // Scroll reveal (skipped when the visitor prefers reduced motion)
   var items = document.querySelectorAll(".reveal");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
