@@ -246,7 +246,7 @@ footer { padding: 28px 0 40px; color: var(--ink-2); font-size: .9rem; border-top
   .stack { grid-template-columns: repeat(2, 1fr); }
   .certs { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   html { scroll-padding-top: 80px; }
   .site-header .btn { display: none; }
   .site-header .wrap { flex-wrap: nowrap; }
@@ -256,6 +256,9 @@ footer { padding: 28px 0 40px; color: var(--ink-2); font-size: .9rem; border-top
   .nav a { padding: 14px 0; font-size: 1.05rem; border-bottom: 1px solid var(--line); }
   .nav a:last-child { border-bottom: 0; }
   .nav .nav-cv { display: block; margin-top: 12px; text-align: center; background: var(--cobalt); color: #fff; border-radius: 10px; padding: 12px; border: 0; }
+}
+@media (max-width: 720px) {
+  html { scroll-padding-top: 80px; }
   .panel { font-size: .76rem; }
   .panel pre { padding: 16px 16px 20px; }
   .card, .card.featured { grid-column: 1 / -1; }

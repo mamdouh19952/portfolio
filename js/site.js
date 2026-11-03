@@ -34,7 +34,7 @@
     document.addEventListener("click", function (e) {
       if (!header.contains(e.target)) setMenu(false);
     });
-    window.matchMedia("(min-width: 721px)").addEventListener("change", function () { setMenu(false); });
+    window.matchMedia("(min-width: 961px)").addEventListener("change", function () { setMenu(false); });
   }
 
   // Scroll reveal (skipped when the visitor prefers reduced motion)
