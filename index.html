@@ -1,1002 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mamdouh Mahmoud | Full Stack Developer (Laravel &amp; Vue.js)</title>
-  <meta name="description" content="Mamdouh Mahmoud — backend-focused Full Stack Developer building Laravel REST APIs and Vue.js front-ends with PHP and MySQL.">
-  <meta name="theme-color" content="#343434">
+  <title>Mamdouh Mahmoud | Backend-Focused Full Stack Developer (Laravel &amp; Vue.js)</title>
+  <meta name="description" content="Mamdouh Mahmoud is a backend-focused full stack developer building Laravel REST APIs and Vue 3 front ends with PHP and MySQL. Projects, code and certificates.">
+  <meta name="theme-color" content="#f4f6f9">
+  <link rel="canonical" href="https://mamdouh19952.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mamdouh Mahmoud | Backend-Focused Full Stack Developer">
+  <meta property="og:description" content="Laravel REST APIs, Vue 3 front ends, and an AI-assisted, spec-driven workflow.">
+  <meta property="og:url" content="https://mamdouh19952.github.io/portfolio/">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..800&family=Nunito+Sans:opsz,wght@6..12,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="preload" as="image" href="images/bg-mobile.webp" media="(max-width: 767.98px)">
-  <link rel="preload" as="image" href="images/bg.webp" media="(min-width: 768px)">
-
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css?v=20261017b">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=20261103">
 </head>
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example">
-  <a href="#Home" class="up-home" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
-  <div class="sideNav open min-vh-100  " id="sideNav">
-    <ul class="links-side list-unstyled position-relative  pt-5">
-      <li class=" m-4 ps-3 fw-400 ">
-        <i class="fa-solid fa-xmark fa-2x close"></i>
-      </li>
-      <li class=" me-2 ps-3 fw-200 ">
-        <a class="nav-link text-uppercase  " aria-current="page" href="#Home">Home</a>
-      </li>
-      <li class=" me-2 ps-3">
-        <a class="nav-link  " href="#About">About</a>
-      </li>
-      <li class=" me-2 ps-3">
-        <a class="nav-link  " href="#Services">Services</a>
-      </li>
-      <li class=" me-2 ps-3">
-        <a class="nav-link  " href="#Projects">Projects</a>
-      </li>
-      <li class=" me-2 ps-3">
-        <a class="nav-link  " href="#Certificates">Certificates</a>
-      </li>
-      <li class=" me-2 ps-3">
-        <a class="nav-link  " href="#Contact">Contact</a>
-      </li>
-    </ul>
-    <span id="setting" class="setting" role="button" tabindex="0" aria-label="Open quick navigation"><i class="fa-solid fa-gear fa-spin "></i></span>
-
-
-
-  </div>
-  <!-- start of nav sec -->
-  <header id="navbar-example">
-    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
-      <div class="container pt-1">
-        <a class="navbar-brand text-bold fs-7" href="#">PORTFOLIO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-            <li class="nav-item me-2 fw-400 ">
-              <a class="nav-link text-uppercase active" aria-current="page" href="#Home">Home</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link  " href="#About">About</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link " href="#Services">Services</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link " href="#Projects">Projects</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link " href="#Certificates">Certificates</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="nav-link " href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">Mamdouh Mahmoud<span>/backend</span></a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#ai">AI workflow</a>
+        <a href="#stack">Stack</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn small" href="images/Mamdouh_CV.pdf" download>Download CV</a>
+    </div>
   </header>
-  <!-- end of nav sec -->
 
-  <!-- start of home sec -->
-  <section id="Home" class=" animate-img text-white ">
-    <div class="container h-100      ">
-      <div class=" title h-100 d-flex align-items-center justify-content-center flex-column text-center">
-        <h4 class="fs-3">Hello
-        </h4>
-        <h2 class="fs-3 py-4">i AM  </h2>
-
-        <ul class="social py-4 d-flex unorderd-list list-unstyled justify-content-center ">
-
-
-
-  <!-- <li class=" px-2"><a href="https://github.com/mamdouh19952?tab=repositories" target="_blank"
-            class="text-decoration-none text-white  p-2 "><i class="fa-brands fa-facebook-f"></i></a></li> -->
-
-          <li class="px-2"><a
-              href="https://api.whatsapp.com/send/?phone=201021811102&text&type=phone_number&app_absent=0"
-              target="_blank" class="text-decoration-none text-white  p-2 -"><i
-                class="fa-brands fa-whatsapp"></i></i></a></li>
-          <li class="px-2"><a href="https://github.com/mamdouh19952" target="_blank"
-              class="text-decoration-none text-white  p-2 -"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li class="px-2"><a href="https://www.linkedin.com/in/mamdouh-mahmoud-327641202/" target="_blank"
-              class="text-decoration-none text-white  p-2 -"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li class="px-2"><a href="https://youtu.be/zVBbdcwsSXE?si=ERa2HUQyPkb1eYz1" target="_blank"
-              class="text-decoration-none text-white  p-2 -"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-
-          </ul>
-      </div>
-      <a href="#About" class="scroll" aria-label="Scroll to About"></a>
-
-    </div>
-  </section>
-  <!-- end of home sec -->
-
-  <!-- start of about sec -->
-  <section id="About" class=" py-5">
-    <div class="container">
-      <div class="row">
-        <div class=" animate-img  col-md-6  ">
-          <div class="about-img position-relative">
-            <img src="images/mamdouh-800.webp" srcset="images/mamdouh-600.webp 600w, images/mamdouh-800.webp 800w, images/mamdouh.webp 900w" sizes="(min-width: 1400px) 636px, (min-width: 768px) 46vw, 100vw" width="800" height="800" alt="Mamdouh Mahmoud" class="img-fluid  z-2" fetchpriority="high" decoding="async">
+  <main id="top">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <p class="status"><i></i>Open to backend and full-stack roles</p>
+          <h1>I build the <em>Laravel APIs</em> behind web apps.</h1>
+          <p class="lede">I spent 5+ years as a UI developer before moving to the backend. Today I ship REST APIs with Laravel, Sanctum and MySQL, and add a Vue 3 front end when a project needs one.</p>
+          <div class="cta">
+            <a class="btn primary" href="#work">See the projects</a>
+            <a class="btn" href="https://github.com/mamdouh19952" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/mamdouh-mahmoud-327641202/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
-        <div class=" animate-img  col-md-6 ">
-          <div class="about-text">
-            <h2 class="text-uppercase fw-bold">About Me.</h2>
-            <p class="lead ui">Full Stack Developer — Backend-Focused (Laravel · PHP · MySQL)</p>
-            <p class="py-1">
-              I am <span>Mamdouh Mahmoud</span>, a backend-focused Full Stack Developer with 4+ years of
-              professional web development experience, recognized as <span>Top Performer</span> in Route
-              Academy's Back-end (PHP & Laravel) diploma. I build scalable Laravel REST APIs and dynamic
-              Vue.js front-ends, with hands-on experience in authentication & authorization, database design
-              and optimization, and clean OOP/MVC architecture — comfortable owning a project end-to-end,
-              from requirements to deployment.
-            </p>
 
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">Bootstrap</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="90" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">Tailwind CSS</h6>
-                <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="85" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">JavaScript</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="90" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">Vue.js</h6>
-                <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="85" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">PHP</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="85" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">Laravel</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="90" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-4">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">MySQL</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="90" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills pb-5">
-              <div class="item position-relative text-center pb">
-                <h6 class="text-uppercase position-absolute text-white p-1 px-3">REST APIs</h6>
-                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div data-target="90" aria-valuenow="0" class="progress-bar" style="width: 0%">0%</div>
-                </div>
-              </div>
-            </div>
-
-            <button class="btn  border border-1 border-black fs-7 text-uppercase bg-black px-4 text-white"><a
-                href="./images/Mamdouh_CV.pdf" target="_blank" download="ui &front end developer_mamdouh"
-                class="text-decoration-none text-white" rel="noopener noreferrer">Download CV</a></button>
-            <button class="second btn  border border-1 border-black text-uppercase px-4"><a
-                href="https://api.whatsapp.com/send/?phone=201021811102&text&type=phone_number&app_absent=0"
-                target="_blank" class="text-decoration-none text-black" rel="noopener noreferrer">Contact
-                me</a></button>
+        <div class="panel" aria-label="Profile summary shown as an API response">
+          <div class="panel-bar">
+            <span class="req"><b>GET</b>/api/developer</span>
+            <span class="ok">200 OK</span>
           </div>
+<pre><span class="ln" style="animation-delay:.1s">{</span><span class="ln" style="animation-delay:.25s">  <span class="k">"name"</span>: <span class="s">"Mamdouh Mahmoud"</span>,</span><span class="ln" style="animation-delay:.4s">  <span class="k">"role"</span>: <span class="s">"Backend-focused full stack"</span>,</span><span class="ln" style="animation-delay:.55s">  <span class="k">"backend"</span>: [<span class="s">"PHP"</span>, <span class="s">"Laravel"</span>, <span class="s">"MySQL"</span>,</span><span class="ln" style="animation-delay:.65s">              <span class="s">"REST"</span>, <span class="s">"Sanctum"</span>],</span><span class="ln" style="animation-delay:.8s">  <span class="k">"frontend"</span>: [<span class="s">"Vue 3"</span>, <span class="s">"Pinia"</span>, <span class="s">"Tailwind"</span>],</span><span class="ln" style="animation-delay:.95s">  <span class="k">"workflow"</span>: [<span class="s">"Claude Code"</span>, <span class="s">"Spec Kit"</span>],</span><span class="ln" style="animation-delay:1.1s">  <span class="k">"based_in"</span>: <span class="s">"Egypt"</span>,</span><span class="ln" style="animation-delay:1.25s">  <span class="k">"open_to"</span>: [<span class="s">"backend"</span>, <span class="s">"full-stack"</span>]</span><span class="ln" style="animation-delay:1.4s">}</span></pre>
         </div>
       </div>
-
     </div>
-  </section>
-  <!-- end of about sec -->
 
-  <!-- start of services sec -->
-  <section id="Services" class="animate-img">
-    <div class="container py-4">
-      <div class="title main-title text-center d-flex justify-content-center align-items-center position-relative">
-        <h2 class="fw-bold text-capitalize">Services</h2>
-        <h3 class="position-absolute text-black text-capitalize fw-bolder fs-2">Services</h3>
-      </div>
+    <!-- Work -->
+    <section id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Backend first, with the front ends that go on top</h2>
+          <p>Every project links to its code. Live demos are linked where they exist.</p>
+        </div>
 
-      <div class="row g-4 py-5">
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="backend" aria-pressed="false">Backend</button>
+          <button type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        </div>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-code fs-3"></i>
-            </div>
+        <div class="grid">
+          <article class="card featured reveal" data-type="backend">
+            <div class="shot"><img src="images/horse-platform-800.webp" srcset="images/horse-platform-600.webp 600w, images/horse-platform-800.webp 800w, images/horse-platform.webp 1324w" sizes="(min-width: 960px) 540px, 100vw" width="800" height="338" alt="Home page of the horse listings platform" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Frontend Development</h5>
-              <p class="card-text text-muted">
-                Building responsive user interfaces using HTML, CSS, JavaScript, Vue.js, Bootstrap, and Tailwind.
-              </p>
+              <p class="tags">Laravel 12 · Sanctum · Vue 3 · MySQL</p>
+              <h3>Horse Listings Platform</h3>
+              <p class="desc">REST API and admin dashboard for an Arabian horse stud. Horses belong to several categories, with image and video uploads and a public catalog in Arabic, English and Chinese.</p>
+              <div class="links">
+                <a href="https://elbaraa.fsegypt.com/" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/mamdouh19952/horse-listings-platform" target="_blank" rel="noopener">Code ↗</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-server fs-3"></i>
-            </div>
+          <article class="card featured reveal" data-type="backend">
+            <div class="shot"><img src="images/megascope-800.webp" srcset="images/megascope-600.webp 600w, images/megascope-800.webp 800w, images/megascope.webp 1324w" sizes="(min-width: 960px) 540px, 100vw" width="800" height="337" alt="Home page of the medical equipment platform" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Backend Development</h5>
-              <p class="card-text text-muted">
-                Developing secure and scalable backend systems using PHP and Laravel with clean MVC architecture.
-              </p>
+              <p class="tags">Laravel 12 · Sanctum · Vue 3 · MySQL</p>
+              <h3>Medical Equipment Platform</h3>
+              <p class="desc">Website and admin system for an endoscopy-equipment company: device catalog, maintenance jobs, customers and payments. Laravel API with an Arabic, right-to-left Vue front end.</p>
+              <div class="links">
+                <a href="https://megascope.fsegypt.com/" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/mamdouh19952/megascope-platform" target="_blank" rel="noopener">Code ↗</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-database fs-3"></i>
-            </div>
+          <article class="card reveal" data-type="backend">
+            <div class="shot"><img src="images/bookingapi-800.webp" srcset="images/bookingapi-600.webp 600w, images/bookingapi-800.webp 800w, images/bookingapi.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Booking API tested in Postman" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Database Management</h5>
-              <p class="card-text text-muted">
-                Designing and managing databases using MySQL with efficient queries and relationships.
-              </p>
+              <p class="tags">Laravel · Sanctum · MediaLibrary</p>
+              <h3>Booking API</h3>
+              <p class="desc">Event and seat booking API with token auth and email OTP, admin and user roles, media uploads and a Postman collection.</p>
+              <div class="links">
+                <a href="https://github.com/mamdouh19952/api-bookings" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_api-laravel-backend-activity-7454638654632681472-Cdj0" target="_blank" rel="noopener">Write-up ↗</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-mobile fs-3"></i>
-            </div>
+          <article class="card reveal" data-type="backend">
+            <div class="shot"><img src="images/e-commerce-800.webp" srcset="images/e-commerce-600.webp 600w, images/e-commerce-800.webp 800w, images/e-commerce.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Admin dashboard of the e-commerce store" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Responsive Design</h5>
-              <p class="card-text text-muted">
-                Creating fully responsive websites that work perfectly on all devices and screen sizes.
-              </p>
+              <p class="tags">Laravel · Jetstream · Livewire</p>
+              <h3>E-commerce Store</h3>
+              <p class="desc">Online store with cart, wishlist and orders, plus an admin dashboard for products, orders and users. Arabic and English.</p>
+              <div class="links">
+                <a href="https://github.com/mamdouh19952/e-commerce_php2" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-laravel-backend-activity-7448846034551808000-Ot69" target="_blank" rel="noopener">Write-up ↗</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-cogs fs-3"></i>
-            </div>
+          <article class="card reveal" data-type="backend">
+            <div class="shot"><img src="images/tasks-800.webp" srcset="images/tasks-600.webp 600w, images/tasks-800.webp 800w, images/tasks.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Taskify to-do app" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Web Applications</h5>
-              <p class="card-text text-muted">
-                Building dynamic web applications with CRUD operations, APIs, and modern frameworks.
-              </p>
+              <p class="tags">PHP · MySQL · Sessions</p>
+              <h3>Taskify</h3>
+              <p class="desc">Multi-user to-do app in plain PHP and MySQL: hashed passwords, sessions, and a private task list for each user with full CRUD.</p>
+              <div class="links">
+                <a href="https://github.com/mamdouh19952/Taskify1" target="_blank" rel="noopener">Code ↗</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="col-sm-6 col-lg-4 text-center">
-          <div class="card shadow d-flex justify-content-center align-items-center flex-column py-4">
-            <div class="card-icon p-4 my-4 rounded-circle">
-              <i class="fa fa-github fs-3"></i>
-            </div>
+          <article class="card reveal" data-type="backend">
+            <div class="shot"><img src="images/website-800.webp" srcset="images/website-600.webp 600w, images/website-800.webp 800w, images/website.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="487" alt="Websites Maker admin form" loading="lazy" decoding="async"></div>
             <div class="card-body">
-              <h5 class="fw-bolder">Version Control</h5>
-              <p class="card-text text-muted">
-                Managing projects efficiently using Git and GitHub for collaboration and code versioning.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- end of services sec -->
-
-  <!-- start of Projects sec -->
-  <section id="Projects" class="animate-img">
-    <div class="container py-4">
-      <div class="title main-title text-center  d-flex justify-content-center align-items-center position-relative">
-
-
-        <h2 class="fw-bold text-capitalize ">Projects</h2>
-        <h3 class="position-absolute text-black text-capitalize fw-bolder fs-2   z-1 ">Projects</h3>
-
-      </div>
-      <!-- start nav and tabs -->
-      <ul class="nav nav-pills project-filters mb-5 justify-content-center pt-5" id="pills-tab" role="tablist">
-
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All"
-            type="button" role="tab" aria-controls="pills-All" aria-selected="true">All Projects</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Graphic2-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphic2"
-            type="button" role="tab" aria-controls="pills-Graphic2" aria-selected="false">Laravel</button>
-        </li>
-
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphic"
-            type="button" role="tab" aria-controls="pills-Graphic" aria-selected="false">Native PHP</button>
-        </li>
-
-
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design"
-            type="button" role="tab" aria-controls="pills-Design" aria-selected="false"> WebDesign</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-Brand-tab" data-bs-toggle="pill" data-bs-target="#pills-Brand"
-            type="button" role="tab" aria-controls="pills-Brand" aria-selected="false">Frontend js & vuejs </button>
-        </li>
-
-
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
-  <div class="row g-4">
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Booking API</p>
-        <div class="ineer-img position-relative">
-          <img src="images/bookingapi-800.webp" srcset="images/bookingapi-600.webp 600w, images/bookingapi-800.webp 800w, images/bookingapi.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="421" alt="Booking API project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Booking API</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_api-laravel-backend-activity-7454638654632681472-Cdj0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mamdouh19952/api-bookings" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
+              <p class="tags">PHP · MySQL</p>
+              <h3>Websites Maker</h3>
+              <p class="desc">PHP project from the Route Academy back-end track. The code stays private; the write-up shows how it works.</p>
+              <div class="links">
+                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-php-backend-activity-7442430492731207680-b2et" target="_blank" rel="noopener">Write-up ↗</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">E-Commerce</p>
-        <div class="ineer-img position-relative">
-          <img src="images/e-commerce-800.webp" srcset="images/e-commerce-600.webp 600w, images/e-commerce-800.webp 800w, images/e-commerce.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="414" alt="E-Commerce project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">E-Commerce</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-laravel-backend-activity-7448846034551808000-Ot69?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mamdouh19952/e-commerce_php2" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
+          <article class="card reveal" data-type="frontend">
+            <div class="shot"><img src="images/e-commerce-vue-800.webp" srcset="images/e-commerce-vue-600.webp 600w, images/e-commerce-vue-800.webp 800w, images/e-commerce-vue.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Vue e-commerce storefront" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <p class="tags">Vue 3 · TypeScript · Pinia · Tailwind 4</p>
+              <h3>E-commerce Storefront</h3>
+              <p class="desc">Responsive Vue storefront with route guards, catalog, cart, wishlist, checkout and order history.</p>
+              <div class="links">
+                <a href="https://e-commerce-route-8jma.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/mamdouh19952/e-commerce-route" target="_blank" rel="noopener">Code ↗</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Horse Listings Platform</p>
-        <div class="ineer-img position-relative">
-          <img src="images/horse-platform-800.webp" srcset="images/horse-platform-600.webp 600w, images/horse-platform-800.webp 800w, images/horse-platform.webp 1324w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="383" alt="Horse listings platform screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Horse Listings Platform</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://elbaraa.fsegypt.com/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/horse-listings-platform" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
+          <article class="card reveal" data-type="frontend">
+            <div class="shot"><img src="images/yummy-800.webp" srcset="images/yummy-600.webp 600w, images/yummy-800.webp 800w, images/yummy.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Yummy meals explorer" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <p class="tags">jQuery · Bootstrap · TheMealDB API</p>
+              <h3>Yummy</h3>
+              <p class="desc">Meals explorer: search by name or letter, browse by category, area or ingredient, and open the full recipe.</p>
+              <div class="links">
+                <a href="https://mamdouh19952.github.io/Yummy/" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/mamdouh19952/Yummy" target="_blank" rel="noopener">Code ↗</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Medical Equipment Platform</p>
-        <div class="ineer-img position-relative">
-          <img src="images/megascope-800.webp" srcset="images/megascope-600.webp 600w, images/megascope-800.webp 800w, images/megascope.webp 1324w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="383" alt="Medical equipment company website screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Medical Equipment Platform</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://megascope.fsegypt.com/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/megascope-platform" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
+          <article class="card reveal" data-type="frontend">
+            <div class="shot"><img src="images/game-800.webp" srcset="images/game-600.webp 600w, images/game-800.webp 800w, images/game.webp 1200w" sizes="(min-width: 960px) 350px, 100vw" width="800" height="421" alt="Game Over games browser" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <p class="tags">Vanilla JS · Bootstrap 5 · REST API</p>
+              <h3>Game Over</h3>
+              <p class="desc">Free-to-play games browser with sign-up and login, category filters, a details page and a remembered dark mode.</p>
+              <div class="links">
+                <a href="https://mamdouh19952.github.io/GameOver1/" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/mamdouh19952/GameOver1" target="_blank" rel="noopener">Code ↗</a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Websites Maker</p>
-        <div class="ineer-img position-relative">
-          <img src="images/website-800.webp" srcset="images/website-600.webp 600w, images/website-800.webp 800w, images/website.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="487" alt="Websites Maker project screenshot" class="img-fluid" loading="lazy" decoding="async">
-
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Websites Maker</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-php-backend-activity-7442430492731207680-b2et?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </div>
+    <!-- AI workflow -->
+    <section id="ai" class="ai" aria-labelledby="ai-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">AI-assisted development</p>
+          <h2 id="ai-title">I build with Claude Code, and I keep it on a short leash</h2>
+        </div>
+        <div class="ai-grid reveal">
+          <div>
+            <h3>Specs before code</h3>
+            <p>Full-stack projects start as a written spec with Spec Kit: user stories, a plan, then tasks. The <code>specs/</code> folders in the horse and medical-equipment repos show the process.</p>
+          </div>
+          <div>
+            <h3>Rules the agent follows</h3>
+            <p>A <code>CLAUDE.md</code> in each repo fixes the API response shape, folder layout and conventions, so the code from task forty matches the code from task one.</p>
+          </div>
+          <div>
+            <h3>Skills I maintain</h3>
+            <p>Two public skill sets for Claude Code: <a href="https://github.com/mamdouh19952/php-laravel-claude-skills" target="_blank" rel="noopener">Laravel and PHP conventions</a> and <a href="https://github.com/mamdouh19952/speckit-claude-skill" target="_blank" rel="noopener">a Spec Kit workflow</a>.</p>
           </div>
         </div>
+        <p class="note reveal">I read, run and test everything the agent writes. The architecture and the trade-offs are mine.</p>
+        <button class="btn reveal" type="button" id="askTwin">Ask my Digital Twin</button>
       </div>
-    </div>
+    </section>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Portfolio Website</p>
-        <div class="ineer-img position-relative">
-          <img src="images/web-design-800.webp" srcset="images/web-design-600.webp 600w, images/web-design-800.webp 800w, images/web-design.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="399" alt="Portfolio Website project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Portfolio Website</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/portfolio/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/portfolio.git" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- Stack -->
+    <section id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Stack</p>
+          <h2 id="stack-title">What I work with</h2>
         </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Yummy</p>
-        <div class="ineer-img position-relative">
-          <img src="images/yummy-800.webp" srcset="images/yummy-600.webp 600w, images/yummy-800.webp 800w, images/yummy.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="394" alt="Yummy project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Yummy</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/Yummy/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/Yummy" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+        <div class="stack reveal">
+          <div><h3>Backend</h3><ul><li>PHP 8</li><li>Laravel 12</li><li>Sanctum</li><li>Eloquent and MySQL</li><li>REST APIs</li><li>PHPUnit</li></ul></div>
+          <div><h3>Frontend</h3><ul><li>Vue 3 and Pinia</li><li>TypeScript</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Vite</li></ul></div>
+          <div><h3>Tools</h3><ul><li>Git and GitHub</li><li>Postman</li><li>Vercel</li><li>cPanel hosting</li></ul></div>
+          <div><h3>AI</h3><ul><li>Claude Code</li><li>Spec Kit</li><li>Custom skills</li></ul></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Game Over</p>
-        <div class="ineer-img position-relative">
-          <img src="images/game-800.webp" srcset="images/game-600.webp 600w, images/game-800.webp 800w, images/game.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="404" alt="Game Over project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Game Over</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/GameOver1/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/GameOver1" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- Courses -->
+    <section id="courses" aria-labelledby="courses-title" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Courses</p>
+          <h2 id="courses-title">Where I trained</h2>
+        </div>
+        <div class="certs">
+          <figure class="cert reveal"><img src="images/laravel-600.webp" width="600" height="450" alt="Route Academy Back-end (PHP and Laravel) diploma certificate" loading="lazy" decoding="async"><figcaption><strong>Back-end (PHP &amp; Laravel) Diploma</strong><span>Route Academy · Top achiever · Apr 2026</span></figcaption></figure>
+          <figure class="cert reveal"><img src="images/front-600.webp" width="600" height="450" alt="Route Academy Frontend diploma certificate" loading="lazy" decoding="async"><figcaption><strong>Frontend (Vue.js) Diploma</strong><span>Route Academy · Outstanding performance · Jul 2025</span></figcaption></figure>
+          <figure class="cert reveal"><img src="images/ai-coder-claude-code-600.webp" width="600" height="446" alt="AI Coder: Complete Claude Code and Coding Agents certificate" loading="lazy" decoding="async"><figcaption><strong>AI Coder: Claude Code &amp; Coding Agents</strong><span>Udemy · Ed Donner · 16.5 hours · Aug 2026</span></figcaption></figure>
+          <figure class="cert reveal"><img src="images/code-smarter-with-ai-600.webp" width="600" height="450" alt="Code Smarter With AI certificate" loading="lazy" decoding="async"><figcaption><strong>Code Smarter With AI</strong><span>Eng. Usama Elgendy · 18 hours · Jul 2026</span></figcaption></figure>
+          <figure class="cert reveal"><img src="images/claude-arabic-600.webp" width="600" height="450" alt="Claude AI Masterclass in Arabic certificate" loading="lazy" decoding="async"><figcaption><strong>Claude AI Masterclass (Arabic)</strong><span>Udemy · 4.5 hours · Jul 2026</span></figcaption></figure>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">E-commerce-vue</p>
-        <div class="ineer-img position-relative">
-          <img src="images/e-commerce-vue-800.webp" srcset="images/e-commerce-vue-600.webp 600w, images/e-commerce-vue-800.webp 800w, images/e-commerce-vue.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="396" alt="E-commerce Vue.js project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">E-commerce-vue</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://e-commerce-route-8jma.vercel.app" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/e-commerce-route" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- About -->
+    <section id="about" class="about" aria-labelledby="about-title" style="padding-top:0">
+      <div class="wrap">
+        <img class="avatar reveal" src="images/avatar.webp" width="220" height="220" alt="Portrait of Mamdouh Mahmoud" loading="lazy" decoding="async">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Mamdouh Mahmoud</h2>
+          <p>I'm a backend-focused full stack developer. I came to Laravel after more than five years as a UI developer in medical and pharma advertising, so I understand what the front end needs from an API.</p>
+          <p>I graduated from the <strong>Route Academy Back-end (PHP &amp; Laravel) diploma as a top achiever</strong>, and I'm comfortable owning a project from requirements to deployment: database design, authentication and authorization, clean MVC code, and the hosting.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Taskify</p>
-        <div class="ineer-img position-relative">
-          <img src="images/tasks-800.webp" srcset="images/tasks-600.webp 600w, images/tasks-800.webp 800w, images/tasks.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="379" alt="Taskify project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Taskify</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://github.com/mamdouh19952/Taskify1" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Hiring for a Laravel backend role?</h2>
+        </div>
+        <a class="mail reveal" href="mailto:mamdouh87741@gmail.com">mamdouh87741@gmail.com</a>
+        <div class="contact-links reveal">
+          <a class="btn" href="https://www.linkedin.com/in/mamdouh-mahmoud-327641202/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/mamdouh19952" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://api.whatsapp.com/send/?phone=201021811102&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="images/Mamdouh_CV.pdf" download>Download CV</a>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
+  </main>
 
-<!-- Design Tab -->
-<div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab" tabindex="0">
-  <div class="row g-4">
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Portfolio Website</p>
-        <div class="ineer-img position-relative">
-          <img src="images/web-design-800.webp" srcset="images/web-design-600.webp 600w, images/web-design-800.webp 800w, images/web-design.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="399" alt="Portfolio Website project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Portfolio Website</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/portfolio/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/portfolio.git" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Brand Tab -->
-<div class="tab-pane fade" id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab" tabindex="0">
-  <div class="row g-4">
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Yummy</p>
-        <div class="ineer-img position-relative">
-          <img src="images/yummy-800.webp" srcset="images/yummy-600.webp 600w, images/yummy-800.webp 800w, images/yummy.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="394" alt="Yummy project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Yummy</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/Yummy/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/Yummy" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Game Over</p>
-        <div class="ineer-img position-relative">
-          <img src="images/game-800.webp" srcset="images/game-600.webp 600w, images/game-800.webp 800w, images/game.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="404" alt="Game Over project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Game Over</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://mamdouh19952.github.io/GameOver1/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/GameOver1" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">E-commerce-vue</p>
-        <div class="ineer-img position-relative">
-          <img src="images/e-commerce-vue-800.webp" srcset="images/e-commerce-vue-600.webp 600w, images/e-commerce-vue-800.webp 800w, images/e-commerce-vue.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="396" alt="E-commerce Vue.js project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">E-commerce-vue</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://e-commerce-route-8jma.vercel.app" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/e-commerce-route" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Graphic Tab -->
-<div class="tab-pane fade" id="pills-Graphic" role="tabpanel" aria-labelledby="pills-Graphic-tab" tabindex="0">
-  <div class="row g-4">
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Taskify</p>
-        <div class="ineer-img position-relative">
-          <img src="images/tasks-800.webp" srcset="images/tasks-600.webp 600w, images/tasks-800.webp 800w, images/tasks.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="379" alt="Taskify project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class="layer-content text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Taskify</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://github.com/mamdouh19952/Taskify1" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Graphic2 Tab (Laravel/Backend) -->
-<div class="tab-pane fade" id="pills-Graphic2" role="tabpanel" aria-labelledby="pills-Graphic2-tab" tabindex="0">
-  <div class="row g-4">
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Booking API</p>
-        <div class="ineer-img position-relative">
-          <img src="images/bookingapi-800.webp" srcset="images/bookingapi-600.webp 600w, images/bookingapi-800.webp 800w, images/bookingapi.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="421" alt="Booking API project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Booking API</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_api-laravel-backend-activity-7454638654632681472-Cdj0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mamdouh19952/api-bookings" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">E-Commerce</p>
-        <div class="ineer-img position-relative">
-          <img src="images/e-commerce-800.webp" srcset="images/e-commerce-600.webp 600w, images/e-commerce-800.webp 800w, images/e-commerce.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="414" alt="E-Commerce project screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">E-Commerce</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-laravel-backend-activity-7448846034551808000-Ot69?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mamdouh19952/e-commerce_php2" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Horse Listings Platform</p>
-        <div class="ineer-img position-relative">
-          <img src="images/horse-platform-800.webp" srcset="images/horse-platform-600.webp 600w, images/horse-platform-800.webp 800w, images/horse-platform.webp 1324w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="383" alt="Horse listings platform screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Horse Listings Platform</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://elbaraa.fsegypt.com/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/horse-listings-platform" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Medical Equipment Platform</p>
-        <div class="ineer-img position-relative">
-          <img src="images/megascope-800.webp" srcset="images/megascope-600.webp 600w, images/megascope-800.webp 800w, images/megascope.webp 1324w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="383" alt="Medical equipment company website screenshot" class="img-fluid" loading="lazy" decoding="async">
-          <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Medical Equipment Platform</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://megascope.fsegypt.com/" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa fa-chain-broken"></i></a>
-                <a href="https://github.com/mamdouh19952/megascope-platform" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="inner">
-        <p class="fw-bold text-uppercase text-center">Websites Maker</p>
-        <div class="ineer-img position-relative">
-          <img src="images/website-800.webp" srcset="images/website-600.webp 600w, images/website-800.webp 800w, images/website.webp 1200w" sizes="(min-width: 1400px) 416px, (min-width: 992px) 30vw, (min-width: 576px) 46vw, 100vw" width="800" height="487" alt="Websites Maker project screenshot" class="img-fluid" loading="lazy" decoding="async">
-            <div class="layer overflow-hidden">
-            <div class=" text-center d-flex justify-content-center align-items-center flex-column position-relative">
-              <p class="fw-bold text-uppercase">Websites Maker</p>
-              <div class="layer-icon d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/posts/mamdouh-mahmoud-327641202_route-php-backend-activity-7442430492731207680-b2et?utm_source=share&utm_medium=member_desktop&rcm=ACoAADO1NI8BySNjjpuNf9F72v8BL52ziN0oerY" target="_blank" class=" d-flex justify-content-center align-items-center me-3"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- end of Projects sec -->
-
-  <!-- start of Certificates sec -->
-  <section id="Certificates" class="animate-img">
-    <div class="container py-4">
-      <div class="title main-title text-center d-flex justify-content-center align-items-center position-relative">
-        <h2 class="fw-bold text-capitalize">Certificates</h2>
-        <h3 class="position-absolute text-black text-capitalize fw-bolder fs-2 z-1">Certificates</h3>
-      </div>
-
-      <div class="row g-4 py-5">
-
-        <div class="col-sm-6 col-lg-3">
-          <div class="inner">
-            <p class="fw-bold text-uppercase text-center">Backend PHP & Laravel</p>
-            <div class="ineer-img position-relative">
-              <img src="images/laravel-800.webp" srcset="images/laravel-600.webp 600w, images/laravel-800.webp 800w, images/laravel.webp 900w" sizes="(min-width: 1400px) 306px, (min-width: 992px) 23vw, (min-width: 576px) 46vw, 100vw" width="800" height="565" alt="Back-end (PHP & Laravel) Diploma - Route Academy" class="img-fluid" loading="lazy" decoding="async">
-              <div class="layer overflow-hidden">
-                <div class="text-center d-flex justify-content-center align-items-center flex-column position-relative">
-                  <p class="fw-bold text-uppercase">Top Performer</p>
-                  <span class="text-white">Route Academy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <div class="inner">
-            <p class="fw-bold text-uppercase text-center">Frontend (Vue.js)</p>
-            <div class="ineer-img position-relative">
-              <img src="images/front-800.webp" srcset="images/front-600.webp 600w, images/front-800.webp 800w, images/front.webp 900w" sizes="(min-width: 1400px) 306px, (min-width: 992px) 23vw, (min-width: 576px) 46vw, 100vw" width="800" height="566" alt="Frontend Development (Vue.js) Diploma - Route Academy" class="img-fluid" loading="lazy" decoding="async">
-              <div class="layer overflow-hidden">
-                <div class="text-center d-flex justify-content-center align-items-center flex-column position-relative">
-                  <p class="fw-bold text-uppercase">Outstanding Performance</p>
-                  <span class="text-white">Route Academy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <div class="inner">
-            <p class="fw-bold text-uppercase text-center">Code Smarter With AI</p>
-            <div class="ineer-img position-relative">
-              <img src="images/code-smarter-with-ai-800.webp" srcset="images/code-smarter-with-ai-600.webp 600w, images/code-smarter-with-ai-800.webp 800w, images/code-smarter-with-ai.webp 900w" sizes="(min-width: 1400px) 306px, (min-width: 992px) 23vw, (min-width: 576px) 46vw, 100vw" width="800" height="622" alt="Code Smarter With AI Certificate" class="img-fluid" loading="lazy" decoding="async">
-              <div class="layer overflow-hidden">
-                <div class="text-center d-flex justify-content-center align-items-center flex-column position-relative">
-                  <p class="fw-bold text-uppercase">AI-Assisted Development</p>
-                  <span class="text-white">Eng. Usama Elgendy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <div class="inner">
-            <p class="fw-bold text-uppercase text-center">Claude AI Masterclass</p>
-            <div class="ineer-img position-relative">
-              <img src="images/claude-arabic-800.webp" srcset="images/claude-arabic-600.webp 600w, images/claude-arabic-800.webp 800w, images/claude-arabic.webp 900w" sizes="(min-width: 1400px) 306px, (min-width: 992px) 23vw, (min-width: 576px) 46vw, 100vw" width="800" height="695" alt="Claude AI Masterclass in Arabic Certificate" class="img-fluid" loading="lazy" decoding="async">
-              <div class="layer overflow-hidden">
-                <div class="text-center d-flex justify-content-center align-items-center flex-column position-relative">
-                  <p class="fw-bold text-uppercase">Claude AI Masterclass</p>
-                  <span class="text-white">Udemy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <div class="inner">
-            <p class="fw-bold text-uppercase text-center">AI Coder: Claude Code &amp; Agents</p>
-            <div class="ineer-img position-relative">
-              <img src="images/ai-coder-claude-code-800.webp" srcset="images/ai-coder-claude-code-600.webp 600w, images/ai-coder-claude-code-800.webp 800w, images/ai-coder-claude-code.webp 900w" sizes="(min-width: 1400px) 306px, (min-width: 992px) 23vw, (min-width: 576px) 46vw, 100vw" width="800" height="595" alt="AI Coder: Complete Claude Code and Coding Agents certificate" class="img-fluid" loading="lazy" decoding="async">
-              <div class="layer overflow-hidden">
-                <div class="text-center d-flex justify-content-center align-items-center flex-column position-relative">
-                  <p class="fw-bold text-uppercase">AI Coder: Claude Code &amp; Agents</p>
-                  <span class="text-white">Udemy · Ed Donner · 16.5 hours</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <a href="https://drive.google.com/drive/folders/1SGkj-m0Y_XYP_KYCJLS1N8ySke_x0WPT?usp=sharing"
-          target="_blank" rel="noopener noreferrer"
-          class="btn border border-1 border-black fs-7 text-uppercase bg-black px-4 text-white text-decoration-none">
-          View All Certificates
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- end of Certificates sec -->
-
-
-
-  <!-- start of cotact sec -->
-  <section id="Contact" class="animate-img">
-    <div class="container py-4 ">
-
-      <div class="title main-title text-center  d-flex justify-content-center align-items-center position-relative">
-
-        <h2 class="fw-bold text-capitalize ">Contact</h2>
-        <h3 class="position-absolute text-black text-capitalize fw-bolder fs-2   z-1 ">Contact</h3>
-
-
-
-      </div>
-
-
-      <div class="row py-5">
-        <div class="col-md-4 ">
-          <div class="item d-flex align-items-center  flex-column justify-content-center ">
-            <div class="contact-icon text-center rounded-circle ">
-              <i class="fa fa-location-arrow fs-4 p-3   "> </i>
-
-            </div>
-            <h5 class="fw-bolder py-3">Address
-            </h5>
-            <p class="text-muted text-center py-0">Egypt, Cairo </p>
-          </div>
-        </div>
-        <div class="col-md-4 ">
-          <div class="item d-flex align-items-center  flex-column justify-content-center ">
-            <div class="contact-icon text-center rounded-circle ">
-              <i class="fa fa-envelope fs-4 p-3   "> </i>
-
-            </div>
-            <h5 class="fw-bolder py-3">Email
-            </h5>
-            <a href="mailto:mamdouh87741@gmail.com" class="text-decoration-none">
-              <p class="text-muted text-center py-0">mamdouh87741@gmail.com
-
-              </p>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-md-4 ">
-          <div class="item d-flex align-items-center  flex-column justify-content-center ">
-            <div class="contact-icon text-center rounded-circle ">
-              <i class="fa fa-phone fs-4 p-3   "> </i>
-
-            </div>
-            <h5 class="fw-bolder py-3">Phone
-
-            </h5>
-            <a href="tel:+201021811102" class="text-decoration-none">
-              <p class="text-muted text-center py-0">+20 01021811102
-
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row gy-3 px-md-5 contact-form">
-        <div class="col-12 col-md-6">
-          <input type="text" class="form-control" placeholder="Name" aria-label=" name">
-        </div>
-        <div class="col-12 col-md-6">
-          <input type="email" class="form-control" placeholder="Email" aria-label="email">
-        </div>
-
-        <div class="col-12 mb-3">
-          <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <p class="text-area py-3">your message should be less than 50 characters</p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a href="mailto:mamdouh87741@gmail.com?subject=Contact%20Message&body=Write%20your%20message%20here"
-            class="btn px-5 text-white py-2 text-decoration-none">
-            send message
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-  <!-- end of cotact sec -->
-  <!-- start of footer sec -->
-  <footer id="Footer">
-
-
-    <div class="container-fluid mt-5">
-      <div class="row text-center py-3 justify-content-center ">
-        <p class="py-3"> Copy Right 2026 © By Mamdouh All Rights Reserved
-        </p>
-      </div>
-    </div>
+  <footer>
+    <div class="wrap">© 2026 Mamdouh Mahmoud · Cairo, Egypt</div>
   </footer>
 
-  <!-- start Digital Twin chat widget -->
-  <button id="dtToggle" class="dt-toggle" type="button" aria-expanded="false" aria-controls="dtPanel"
-    aria-label="Chat with Mamdouh's Digital Twin">
-    <i class="fa-solid fa-comment-dots"></i>
-    <i class="fa-solid fa-xmark"></i>
+  <!-- Digital Twin chat widget -->
+  <button id="dtToggle" class="dt-toggle" type="button" aria-expanded="false" aria-controls="dtPanel" aria-label="Chat with Mamdouh's Digital Twin">
+    <svg class="ic-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+    <svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
   </button>
   <section id="dtPanel" class="dt-panel" aria-label="Digital Twin chat">
     <div class="dt-header">
-      <div>
-        <strong>Mamdouh's Digital Twin</strong>
-        <span>Ask about my career &amp; projects</span>
-      </div>
+      <div><strong>Mamdouh's Digital Twin</strong><span>Ask about my career &amp; projects</span></div>
       <button id="dtClose" class="dt-close" type="button" aria-label="Close chat">
-        <i class="fa-solid fa-xmark"></i>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
     </div>
     <div id="dtMessages" class="dt-messages" role="log" aria-live="polite"></div>
     <form id="dtForm" class="dt-form">
-      <label for="dtInput" class="visually-hidden">Message</label>
-      <input id="dtInput" class="dt-input" type="text" placeholder="Ask about my experience..." autocomplete="off"
-        maxlength="500">
+      <label for="dtInput" class="sr-only">Message</label>
+      <input id="dtInput" class="dt-input" type="text" placeholder="Ask about my experience..." autocomplete="off" maxlength="500">
       <button id="dtSend" class="dt-send" type="submit" aria-label="Send message">
-        <i class="fa-solid fa-paper-plane"></i>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
       </button>
     </form>
   </section>
-  <!-- end Digital Twin chat widget -->
 
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/gsap.min.js"></script>
-  <script src="js/ScrollToPlugin.min.js"></script>
-  <script src="js/ScrollTrigger.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-  <script src="js/main.js?v=20261017b"></script>
-  <script src="js/digital-twin-chat.js?v=20261017b"></script>
+  <script src="js/site.js"></script>
+  <script src="js/digital-twin-chat.js?v=20261103"></script>
 </body>
-
 </html>
