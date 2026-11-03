@@ -26,7 +26,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
   margin: 0;
   background: var(--paper);
@@ -274,3 +274,8 @@ footer { padding: 28px 0 40px; color: var(--ink-2); font-size: .9rem; border-top
   .panel .ln { opacity: 1; transform: none; animation: none; }
   .card, .card:hover, .shot img, .dt-toggle { transition: none; transform: none; }
 }
+
+/* Overflow safety: grid/flex children may shrink, long words may wrap */
+.hero .wrap > *, .about .wrap > *, .grid > *, .stack > *, .certs > *, .ai-grid > * { min-width: 0; }
+h1, h2, h3, p, li, a { overflow-wrap: anywhere; }
+img, svg, video { max-width: 100%; }
