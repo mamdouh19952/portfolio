@@ -72,38 +72,7 @@
   }); // end foreach
 
  
- function animateCounter(counter) {
-    const target = +counter.getAttribute("data-target");
-    const speed = 200; // كل ما الرقم أصغر السرعة أسرع
-    const increment = target / speed;
 
-    const update = () => {
-      const current = +counter.innerText;
-      if (current < target) {
-        counter.innerText = Math.ceil(current + increment);
-        setTimeout(update, 20);
-      } else {
-        counter.innerText = target;
-      }
-    };
-
-    update();
-  }
-
-  // نراقب السكشن
-  const section = document.querySelector("#Clients");
-  const counters = document.querySelectorAll(".count");
-
-  let started = false; // عشان يشتغل مرة واحدة بس
-
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !started) {
-      counters.forEach(counter => animateCounter(counter));
-      started = true;
-    }
-  }, { threshold: 0.5 }); // يبدأ لما نص السكشن يظهر
-
-  observer.observe(section);
 
 
 // GSAP Animation for Images
