@@ -1,7 +1,7 @@
 (function () {
   const API_URL = "https://mamdouh-digital-twin-api.vercel.app/api/chat";
   const GREETING =
-    "Hi! I'm Mamdouh's Digital Twin — ask me about his experience, skills, or projects (Laravel, Vue.js, PHP, MySQL, REST APIs).";
+    "Hi! I'm Mamdouh's Digital Twin — ask me about his experience, skills, or projects (Laravel, Vue.js, PHP, MySQL, REST APIs). For a project or service, reach him on WhatsApp +20 102 181 1102 or at mamdouh87741@gmail.com.";
 
   const toggle = document.getElementById("dtToggle");
   const panel = document.getElementById("dtPanel");
@@ -63,7 +63,7 @@
           "error",
           res.status === 429
             ? "I'm getting a lot of questions right now — please try again in a minute."
-            : "Sorry, I can't answer right now. Please try again later or reach me at mamdouh87741@gmail.com."
+            : "Sorry, I can't answer right now. Please try again later or reach me on WhatsApp +20 102 181 1102 or at mamdouh87741@gmail.com."
         );
         return;
       }
